@@ -1,0 +1,34 @@
+{
+  "name": "heracles",
+  "version": "1.0.0",
+  "description": "Es el backend de prometeo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elliotfrg25/heracles.git"
+  },
+  "keywords": [
+    "Backend",
+    "prometeo",
+    "billetera",
+    "virtual"
+  ],
+  "author": "Elliot Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elliotfrg25/heracles/issues"
+  },
+  "homepage": "https://github.com/Elliotfrg25/heracles#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "bitcore-lib": "^10.0.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
