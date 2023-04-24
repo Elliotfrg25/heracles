@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors'); // Requerir el paquete CORS en tu backend
 
 const usersRoutes = require('./routes/users'); // Importa las rutas de usuarios
 
@@ -8,6 +9,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 app.use(express.json());
+app.use(cors()); // Agrega CORS como middleware de la aplicación
 
 app.use('/users', usersRoutes); // Utiliza las rutas de usuarios
 
@@ -26,4 +28,5 @@ db.once('open', () => {
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
+
 
