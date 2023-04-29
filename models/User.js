@@ -5,7 +5,15 @@ const userSchema = new Schema({
     username: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
-    // Agrega más campos si es necesario
+    // Agrega los nuevos campos aquí
+    ethereumAddress: {
+        type: String,
+        required: true,
+    },
+    tokenBalance: {
+        type: Number,
+        default: 0,
+    },
 }, {
     timestamps: true,
 });
@@ -13,3 +21,4 @@ const userSchema = new Schema({
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;
+
